@@ -1,13 +1,17 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from "./pages/home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Landing />
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Landing />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

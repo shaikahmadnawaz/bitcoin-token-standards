@@ -15,3 +15,15 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Urbanist", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
