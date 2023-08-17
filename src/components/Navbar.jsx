@@ -30,13 +30,13 @@ export function Navbar() {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <Link
             to="/"
             className="font-bold flex items-center space-x-2 cursor-pointer"
           >
-            <img src="logo.svg" alt="Logo" className="h-8 cursor-pointer" />
+            <img src="logo.svg" alt="Logo" className="h-10 cursor-pointer" />
             <h1 className="text-xl md:text-3xl font-bold">BTS</h1>
           </Link>
         </div>
