@@ -46,7 +46,7 @@ export function Navbar() {
               <li key={item.name}>
                 <Link
                   to={item.href}
-                  className="font-semibold cursor-pointer px-2  hover:rounded-full hover:py-[0.3rem]"
+                  className="font-semibold cursor-pointer px-2 hover:text-blue-600"
                 >
                   {item.name}
                 </Link>

@@ -1,5 +1,6 @@
 import About from "./About";
 import Community from "./Community";
+import TokensCard from "./TokensCard";
 import Hero from "./hero";
 
 const Landing = () => {
@@ -7,6 +8,7 @@ const Landing = () => {
     <>
       <Hero />
       <About />
+      <TokensCard />
       <Community />
     </>
   );

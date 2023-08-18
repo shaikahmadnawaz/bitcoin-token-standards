@@ -3,7 +3,7 @@ const Community = () => {
     <section className="w-full bg-white" id="home">
       <div className="mx-auto max-w-7xl h-full lg:py-6 lg:grid items-center lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         {" "}
-        <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
+        <div className="flex flex-col justify-center px-4 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
           {" "}
           <h1 className="mt-8 text-2xl text-blue-600 font-bold tracking-tight text-primary lg:text-5xl">
             Our Community{" "}
