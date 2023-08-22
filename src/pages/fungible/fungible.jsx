@@ -1,18 +1,23 @@
-import React from 'react';
-import Intro from '../fungible/intro';
-import Body from '../fungible/body';
-import Methods from './methods';
-import Events from './events';
+import Intro from "../fungible/intro";
+import Body from "../fungible/body";
+import Methods from "./methods";
+import Events from "./events";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Fungible = () => {
- return (
-  <>
-  <Intro/>
-  <Body/>
-  <Methods/>
-  <Events/>
-  </>
- );
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return (
+    <>
+      <Intro />
+      <Body />
+      <Methods />
+      <Events />
+    </>
+  );
 };
 
 export default Fungible;

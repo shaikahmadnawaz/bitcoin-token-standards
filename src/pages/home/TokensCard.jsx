@@ -5,6 +5,7 @@ const tokenData = [
     title: "Fungible",
     description:
       "A standardized framework for fungible tokens on the BSV blockchain. These tokens are identical in nature and can be easily exchanged, opening up a world of possibilities for digital currencies and asset representation.",
+    route: "/fungible",
   },
   {
     title: "BTS-NonFungible",
@@ -40,9 +41,10 @@ const TokensCard = () => {
         <h1 className="text-3xl font-bold mb-4 md:text-center text-blue-600">
           Token Standards
         </h1>
-        <Link  className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {tokenData.map((token, index) => (
-            <div
+            <Link
+              to={token.route}
               key={index}
               className="max-w-xs flex bg-white shadow-lg rounded-lg overflow-hidden m-4"
             >
@@ -52,9 +54,9 @@ const TokensCard = () => {
                 </h2>
                 <p className="text-black text-base">{token.description}</p>
               </div>
-            </div>
+            </Link>
           ))}
-        </Link>
+        </div>
       </div>
     </div>
   );
