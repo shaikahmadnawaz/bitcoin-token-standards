@@ -32,6 +32,11 @@ const tokenData = [
     description:
       "As a result of recent legislation, companies in the state of Delaware can now maintain share registries using blockchain technology. According to BTS 884, it will be incorporated into proposed standards. Every token will be a share of a corporation incorporated.",
   },
+  {
+    title: "BTS 1155 Token",
+    description: "A standard for creating both fungible and non-fungible tokens on the Bitcoin SV blockchain. It is a standard that allows for the creation of both fungible and non-fungible tokens on the Bitcoin SV blockchain.",
+    route: "/bts1155",
+  }
 ];
 
 const TokensCard = () => {
